@@ -43,7 +43,7 @@ function Project (props) {
   };
 
   return (
-    <div className='project'>
+    <div className='project' key={props.id}>
       <Card style={card}>
         <div className='project-content'>
           <CardHeader title={<h3>{props.projectTitle}</h3> } />

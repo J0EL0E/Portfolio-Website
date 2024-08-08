@@ -11,6 +11,7 @@ function Projects () {
         <div className='project-card'>
           {projectData.map(data => { 
           return <Project 
+            key ={data.id}
             id = {data.id}
             image={data.image} 
             projectTitle={data.projectTitle} 

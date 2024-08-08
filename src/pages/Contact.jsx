@@ -4,7 +4,6 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import EmailIcon from '@mui/icons-material/Email';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import CallMe from '../assets/Digital Assets/Calling-amico.png'
-import { Call } from '@mui/icons-material';
 
 function Contacts () {
   const currentYear = new Date().getFullYear()
@@ -20,11 +19,15 @@ function Contacts () {
             <a href="mailto:joseluisi.salvador0626@gmail.com" target='_blank'><EmailIcon style={{width: "70px", height: "70px"}} /></a>
             <a href="https://www.facebook.com/jolo.salvador.14/" target='_blank'><FacebookIcon style={{width: "70px", height: "70px"}} /></a>
           </div>
-          <p id="copyright">&#169; {currentYear}  All Rights Reserved. </p>
-          <p> Designed and developed by Jose Luis Salvador</p>
         </div>
-            <img src={CallMe} alt="contact_me_asset" className='contact-me'/>
+        <div className="contact-icon">
+          <img src={CallMe} alt="contact_me_asset" className='contact-me'/>
+        </div>  
       </div>
+      <footer>
+        <p id="copyright">&#169; {currentYear}  All Rights Reserved. </p>
+        <p> Designed and developed by Jose Luis Salvador</p>
+        </footer>
     </section>
   )
 }
